@@ -5,19 +5,19 @@
 	// Sets the run context to one level up instead of the .devcontainer folder.
 	"context": "..",
 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-	"dockerFile": "../Dockerfile",
+	"dockerFile": "Dockerfile",
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"terminal.integrated.shell.linux": null
+		"terminal.integrated.defaultProfile.linux": null
 	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"golang.go"
-	]
+	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Uncomment the next line to run commands after the container is created - for example installing curl.
-	// "postCreateCommand": "apt-get update && apt-get install -y curl",
+	//"postCreateCommand": "go get -v github.com/uudashr/gopkgs/v2/cmd/gopkgs github.com/ramya-rao-a/go-outline github.com/cweill/gotests/gotests github.com/fatih/gomodifytags github.com/haya14busa/goplay/cmd/goplay github.com/go-delve/delve/cmd/dlv@master honnef.co/go/tools/cmd/staticcheck golang.org/x/tools/gopls golang.org/x/tools/godoc",
 	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
 	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
 	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
